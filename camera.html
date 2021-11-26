@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical</title>
+    <!-- LInk To CSS -->
+    <link rel="stylesheet" href="camera.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
+     <style>
+     .box{
+        width:200px;
+        height: 200px;
+        position: absolute;
+          left:0;
+           top:0;
+           text-align: center;
+           font-size: 22px;
+           vertical-align: middle;
+        }
+       </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header> 
+        <a href="index.html" class="logo">EYE <span>CU</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sunglasses.html">Sunglasses</a></li>
+            <li><a href="eyeglasses.html">Eyeglasses</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="brand.html">Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="camera.html"><i class="fas fa-camera"></i></a></li>
+            <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+            </li> 
+        </ul>
+    </header>
+
+ 
+ <div id="container">
+        <video autoplay="true"></video>
+    </div><br>
+
+   <!--  <button class="btn" onclick="startWebCam()">Try On</button> --> 
+    <a href="sunglasses.html" class="btn">Shop Now</a>
+  
+    <div class="row">
+<div id="image">
+<img src="rayb4.png" id="myImage" class="box" draggable="true" style="margin-left: 400px;">
+</div>
+
+<div id="main">
+    <img src="rayb2.png" id="myPhoto" class="box" draggable="true" style="margin-left: 100px;">
+</div>
+
+</div>
+<div class="slider">
+      <span style="--i:1;"><img src="img1.jpg" alt=""></span>
+      <span style="--i:2;"><img src="img2.jpg" alt=""></span>
+      <span style="--i:3;"><img src="img3.jpg" alt=""></span>
+      <span style="--i:4;"><img src="img4.jpg" alt=""></span>    
+      <span style="--i:5;"><img src="img5.jpg" alt=""></span>
+      <span style="--i:6;"><img src="img6.jpg" alt=""></span>
+      <span style="--i:7;"><img src="img7.jpg" alt=""></span>
+      <span style="--i:8;"><img src="img8.jpg" alt=""></span>
+      </div>
+
+
+<script src="camera.js" ></script>
+</html>
